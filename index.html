@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <nav class="header__wrapper">
+          <a class="logo" href="./">Logo</a>
+          <ul class="navigation-menu">
+            <li class="navigation-menu__item">
+              <a class="navigation-menu__link" href="#about">About</a>
+            </li>
+            <li class="navigation-menu__item">
+              <a class="navigation-menu__link" href="#about">Portfolio</a>
+            </li>
+            <li class="navigation-menu__item">
+              <a class="navigation-menu__link" href="#about">Contacts</a>
+            </li>
+          </ul>
+           <div class="theme_wrapper">
+              <input class="old_toggle" type="checkbox" name="" id="theme">
+              <Label class="new_toggle" for="theme"></Label>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+  <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <div class="hero__inner">
+            <p class="hero__subtitle">PYTHON DEVELOPER</p>
+            <h1 class="hero__title">john doe</h1>
+            <p class="hero__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
+              molestias, quo placeat quae dolorem sit molestiae at dolorum
+              deleniti reiciendis!
+            </p>
+            <ul class="hero-action">
+              <li class="hero-action__item">
+                <a class="hero-action__link hero-action__link-primary" href="#"
+                  >Download CV</a
+                >
+              </li>
+              <li class="hero-action__item">
+                <a
+                  class="hero-action__link hero-action__link-secondary"
+                  href="#"
+                  >Learn More</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__img">
+            <img
+              class="hero__ava"
+              src="./assets/images/photo.jpg"
+              width="50"
+              alt="ava img"
+            />
+            <div class="hero_badge"><p>#open_to_work 😏</p></div>
+            <div class="status"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h2 class="about_title">About</h2>
+        <p class="about_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa dolores reiciendis aspernatur odit autem, dolore temporibus et optio!</p>
+
+        <div class="aver_about">
+          <img 
+            class="about_img"
+            src="./assets/images/workspace.jpg" 
+            alt="about img"
+            width="560"
+            height="396">
+          <div class="about_text">
+            <p class="about_paragraph_marked">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui architecto, tempore aspernatur animi esse omnis dolorem corrupti quis in minima culpa, iure blanditiis reiciendis dolorum vitae ipsam, delectus ea! Deserunt! Molestiae, nihil unde. Iste error officiis, qui dolorem eum nostrum nisi? </p>
+            <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui architecto, tempore aspernatur animi esse omnis dolorem corrupti quis in minima culpa, iure blanditiis reiciendis dolorum vitae ipsam, delectus ea! Deserunt! Molestiae, nihil unde. Iste error officiis, qui dolorem eum nostrum nisi?</p>
+            <a class="link" href="">Learn More</a>
+          </div>
+      </div>
+  <ul class="about_list">
+  <li>
+    <div class="icon_circle">
+      <img src="./assets/icons/html.svg" alt="html" width="72">
+    </div>
+    <h3 class="list_title">html</h3>
+    <p class="list_paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+  </li>
+
+  <li>
+    <div class="icon_circle">
+      <img src="./assets/icons/css.svg" alt="css" width="72">
+    </div>
+    <h3 class="list_title">css</h3>
+    <p class="list_paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+  </li>
+
+  <li>
+    <div class="icon_circle">
+      <img src="./assets/icons/sass.svg" alt="sass" width="72">
+    </div>
+    <h3 class="list_title">sass</h3>
+    <p class="list_paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+  </li>
+
+  <li>
+    <div class="icon_circle">
+      <img src="./assets/icons/python.svg" alt="python" width="72">
+    </div>
+    <h3 class="list_title">python</h3>
+    <p class="list_paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+  </li>
+</ul>
+</div>
+    </section>
+
+    <section class="portfolio">
+      <div class="container">
+      <h2 class="portfolio_title">My portfolio</h2>
+      <p class="portfolio_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa dolores reiciendis aspernatur odit autem, dolore temporibus et optio!</p>
+      <div class="container_portfolio">
+        <ul class="portfolio_list">
+          <li>
+            <div class="button_center_div">
+            <img class="div_img" src="./assets/images/code.jpg" alt="code" width="330" height="219">
+            <a class="live_page_button" href="#">live page</a>
+            </div>
+            <div class="little_div">
+              <p class="indiv_title">Product Admin Dashboard</p>
+              <p class="indiv_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate qui repellendus incidunt aut excepturi saepe odit dolorum, eius tenetur, eum, consectetur minima?</p>
+            </div>
+          </li>
+          <li>
+            <div class="button_center_div">
+            <img class="div_img" src="./assets/images/table.jpg" alt="code" width="330" height="219">
+            <a class="live_page_button" href="#">live page</a>
+            </div>
+            <div class="little_div">
+              <p class="indiv_title">Website store</p>
+              <p class="indiv_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate qui repellendus incidunt aut excepturi saepe odit dolorum, eius tenetur, eum, consectetur minima?</p>
+            </div>
+          </li>
+          <li>
+            <div class="button_center_div">
+            <img class="div_img" src="./assets/images/board.jpg" alt="code" width="330" height="219">
+            <a class="live_page_button" href="#">live page</a>
+            </div>
+            <div class="little_div">
+              <p class="indiv_title">Modern App with AI</p>
+              <p class="indiv_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate qui repellendus incidunt aut excepturi saepe odit dolorum, eius tenetur, eum, consectetur minima?</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <h2 class="contacts_main_title">contacts</h2>
+        <div class="container_contact">
+          <div class="container_img">
+            <h3 class="contacts_title">Get in touch</h3>
+            <form>
+              <div class="form-row">
+                <input class="input" type="text" placeholder="Name" required>
+                <input class="input" type="text" placeholder="Last name" required>
+              </div>
+              <div class="form-row row_second">
+                <input class="input" type="email" placeholder="Email" required>
+                <input class="input" type="tel" placeholder="Phone number" pattern="[0-9]{10}" required>
+              </div>
+              <textarea class="text-area" placeholder="Message"></textarea>
+              <button class="form-button" type="submit">Submit now</button>
+            </form>
+          </div>
+        <div class="secondary_container_contacts">
+          <h3 class="contacts_title">Let’s connect</h3>
+          <p class="contacts_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa dolores reiciendis </p>
+          <ul class="contacts_list">
+            <li><a class="contact_link" href="tel:+0671234567"><img class="black_icon" src="./assets/icons/phone.svg" alt="phone_icon" width="40">067 123 45 67</a></li>
+            <li><a class="contact_link" href="mailto:johndoe@gmail.com"><img class="black_icon" src="./assets/icons/mail.svg" alt="mail_icon" width="40">johndoe@gmail.com</a></li>
+            <li><a class="contact_link" href="https://www.google.com/maps?q=50.4501,30.5234" target="_blank"><img class="black_icon" src="./assets/icons/map-pin.svg" alt="map_icon" width="40">Ukraine, Kyiv</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_container">
+        <ul class="social_list">
+          <li><a class="foot_link" href="https://github.com/" target="_blank"><img class="black_icon" src="./assets/icons/github.svg" alt="github" width="22"></a></li>
+          <li><a class="foot_link" href="https://web.telegram.org/k/" target="_blank"><img class="black_icon" src="./assets/icons/telegram.svg" alt="telegram" width="22"></a></li>
+          <li><a class="foot_link" href="https://www.facebook.com/?locale=ru_RU" target="_blank"><img class="black_icon" src="./assets/icons/facebook.svg" alt="fb" width="22"></a></li>
+          <li><a class="foot_link" href="https://www.instagram.com/" target="_blank"><img class="black_icon" src="./assets/icons/instagram.svg" alt="inst" width="22"></a></li>
+        </ul>
+        <p class="footer_text">&copy;2025 company name</p>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>

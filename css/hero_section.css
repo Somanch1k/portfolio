@@ -1,0 +1,222 @@
+.hero {
+  padding-top: 165px;
+  /* padding-bottom: 104px; */
+
+
+  @media screen and (min-width:480px) and (max-width:768px) {
+    padding-top: 140px;
+  }
+  @media screen and (min-width:769px) and (max-width:1200px) {
+    padding-top: 140px;
+    padding-bottom: 104px;
+  }
+  @media screen and (min-width:1201px) {
+    padding-top: 120px;
+    padding-bottom: 104px;
+  }
+  /* padding-top: 140px; */
+}
+
+.hero__subtitle {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+
+.hero__title {
+  margin-top: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: var(--base-color);
+
+  @media screen and (min-width:480px) and (max-width:1200px) {
+    margin-top: 14px;
+  }
+  @media screen and (min-width:1201px){
+    margin-top: 18px;
+  }
+}
+
+.hero__description {
+  margin-top: 16px;
+  max-width: 560px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--secondary-color);
+
+  @media screen and (min-width:480px) and (max-width:1200px) {
+    margin-top: 24px;
+  }
+  @media screen and (min-width:1201px){
+    margin-top: 30px;
+  }
+}
+
+.hero-action {
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+
+  @media screen and (min-width:480px) and (max-width:1200px) {
+    margin-top: 50px;
+    flex-direction: row;
+  }
+  @media screen and (min-width:1201px){
+    margin-top: 60px;
+    flex-direction: row;
+  }
+  
+}
+
+.hero-action__link {
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--base-color);
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: 
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+  
+
+  @media screen and (min-width:480px){
+    width: 145px;
+  }
+}
+
+.hero-action__link-primary {
+  background-color: var(--primary-color);
+  padding: 12px 24px;
+}
+
+.hero-action__link-secondary {
+  outline: 1px solid var(--base-color);
+  padding: 12px 32px;
+}
+
+.hero-action__link:hover{
+  transform: scale(1.1);
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width:480px) and (max-width:1200px) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  @media screen and (min-width:1201px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.hero__img {
+  padding: 16px;
+  margin-top: 40px;
+  width: 300px;
+  height: 300px;
+  border: 5px solid var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @media screen and (min-width:480px) and (max-width:768px) {
+    margin-top: 0px;
+    margin-left: 32px;
+  }
+  @media screen and (min-width:769px) and (max-width:1200px) {
+    margin-top: 0px;
+    width: 400px;
+    height: 400px;
+    margin-left: 32px;
+  }
+  @media screen and (min-width:1201px) {
+    width: 500px;
+   height: 500px;
+    border: 5px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+}
+
+
+.status{
+  width: 32px;
+  height: 32px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 16px;
+  right: 38px;
+
+  @media screen and (min-width:769px) and (max-width:1200px) {
+    bottom: 25px;
+    right: 58px;
+  }
+  @media screen and (min-width:1201px) {
+    bottom: 25px;
+    right: 90px
+  }
+}
+
+.hero_badge{
+  font-family: "DM Sans", sans-serif;;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--black-color);
+  position: absolute;
+  padding: 12px 18px;
+  background-color: var(--base-color);
+  border-radius: 8px;
+  bottom: 30px;
+  left: 0px;
+  animation: tada 1.5s ease infinite;
+
+  @media screen and (min-width:769px) and (max-width:1200px) {
+    padding: 16px 24px;
+    bottom: 50px;
+    left: -23px;
+  }
+  @media screen and (min-width:1201px) {
+    bottom: 100px;
+    left: -40px;
+  }
+  
+}
+
+.hero__ava {
+  border-radius: 50%;
+  height: 260px;
+  width: 260px;
+
+  @media screen and (min-width:769px) and (max-width:1200px) {
+    width: 360px;
+    height: 360px;
+  }
+  @media screen and (min-width:1201px) {
+    border-radius: 50%;
+    width: 460px;
+    height: 460px;
+  }
+}

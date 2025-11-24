@@ -1,0 +1,139 @@
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+
+  @media screen and (min-width:480px) and (max-width:768px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: var(--primary-color);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--base-color);
+  text-transform: uppercase;
+  order: 0;
+}
+
+.navigation-menu {
+  display: flex;
+  gap: 32px;
+  order: 2;
+
+  @media screen and (min-width:480px) and (max-width:768px) {
+    order: 1;
+  }
+
+  @media screen and (min-width:769px){
+    margin-left: auto;
+    order: 1;
+  }
+}
+
+.navigation-menu__link {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--base-color);
+  position: relative;
+}
+
+.navigation-menu__link::after{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: var(--background-color);
+  position: absolute;
+  bottom: -5px;
+  transition: width 1s ease;
+  border-radius: 3px;
+}
+
+.navigation-menu__link:hover::after{
+  width: 100%;
+}
+
+.old_toggle{
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.new_toggle{
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #e9e9eb;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  transition: background-color 0.5s linear;
+}
+
+.new_toggle::before{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(17, 17, 17);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.5s ease-in-out;
+  transition: background-color 0.5s linear;
+}
+
+.old_toggle:checked + .new_toggle{
+  background-color: rgb(17, 17, 17);
+  transition: transform 0.5s ease-in-out;
+  transition: background-color 0.5s linear;
+}
+
+.old_toggle:checked + .new_toggle::before{
+  transform: translateX(25px);
+  background-color: #e9e9eb;
+  transition: transform 0.5s ease-in-out;
+  transition: background-color 0.5s linear;
+}
+
+.theme_wrapper{
+  position: relative;
+  width: 50px;
+  height: 24px;
+  display: block;
+  background-color: #e9e9eb;
+  border-radius: 16px;
+  cursor: pointer;
+  order: 1;
+
+  @media screen and (min-width:480px) and (max-width:768px) {
+    order: 2;
+  }
+
+  @media screen and (min-width:769px){
+    order: 2;
+    margin-left: 16px;
+  }
+
+  @media screen and (min-width:1200px){
+    order: 2;
+    margin-left: 32px;
+  }
+}
