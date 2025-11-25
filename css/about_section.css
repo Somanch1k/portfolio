@@ -138,7 +138,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 64px;
 
   @media screen and (min-width:768px) {
     justify-content: space-around;

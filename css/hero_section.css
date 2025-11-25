@@ -1,18 +1,15 @@
 .hero {
   padding-top: 165px;
-  padding-bottom: 104px;
+  padding-bottom: 50px;
 
 
-  @media screen and (min-width:480px) and (max-width:768px) {
+  @media screen and (min-width:480px){
     padding-top: 140px;
   }
-  @media screen and (min-width:769px) and (max-width:1200px) {
-    padding-top: 140px;
-    padding-bottom: 104px;
-  }
-  @media screen and (min-width:1201px) {
-    padding-top: 120px;
-    padding-bottom: 104px;
+
+  @media screen and (min-width:1200px) {
+    padding-top: 165px;
+    padding-bottom: 50px;
   }
   /* padding-top: 140px; */
 }
@@ -141,7 +138,7 @@
   @media screen and (min-width:480px) and (max-width:768px) {
     margin-top: 0px;
     margin-left: 32px;
-    order: 2;
+    order: 1;
   }
   @media screen and (min-width:769px) and (max-width:1200px) {
     margin-top: 0px;
@@ -227,7 +224,7 @@
 .hero__inner{
   order: 2;
   margin-top: 40px;
-  @media screen and (min-width:480px){
+  @media screen and (min-width:768px){
     order: 1;
   }
 }
