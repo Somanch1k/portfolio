@@ -25,6 +25,7 @@ body:has(#theme:checked){
 
 .social_list{
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -43,14 +44,18 @@ body:has(#theme:checked){
   text-transform: uppercase;
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 10px;
   color: var(--base-color);
+
+  @media screen and (min-width:480px) {
+    font-size: 14px;
+  }
 }
 
 .foot_link{
   background-color: var(--primary-color);
-  width: 40px;
-  height: 40px;
+  width: 22px;
+  height: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,6 +65,20 @@ body:has(#theme:checked){
     transform 0.3s ease,
     border-color 0.3s ease,
     color 0.3s ease;
+  
+
+  @media screen and (min-width:480px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.foot_link img{
+  width: 15px;
+
+  @media screen and (min-width:480px) {
+    width: 22px;
+  }
 }
 
 .foot_link:hover{
