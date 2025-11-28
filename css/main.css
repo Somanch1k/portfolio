@@ -12,6 +12,19 @@ ol {
   list-style: none;
 }
 
+body:has(#theme:checked) {
+  background-color: white;
+  color: black;
+}
+
+body:has(#theme:checked) .portfolio_list li {
+  background-color: black;
+}
+
+body:has(#theme:checked) .black_icon {
+  filter: invert(1);
+}
+
 body {
   background-color: #171717;
   transition: background-color 0.3s linear, color 0.3s linear;
