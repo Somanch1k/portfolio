@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 .portfolio{
   padding-top: 50px;
   padding-bottom: 50px;
@@ -7,7 +9,7 @@
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 38px;
-  color: var(--base-color);
+  color: $base-color;
   text-transform: uppercase;
   text-align: center;
 
@@ -25,7 +27,7 @@
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: var(--base-color);
+  color: $base-color;
   margin: 16px auto 0;
   text-align: center;
 
@@ -45,6 +47,7 @@
   align-items: center;
   gap: 32px;
   margin-top: 40px;
+  padding: 0;
 
   @media screen and (min-width:768px) {
     gap: 64px;
@@ -57,7 +60,7 @@
 }
 
 .portfolio_list li{
-  background-color: var(--base-color);
+  background-color: $base-color;
   max-width: 330px;
   border-radius: 16px;
 }
@@ -71,7 +74,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
-  color: var(--titles-color);
+  color: $titles-color;
 }
 
 .indiv_text{
@@ -79,7 +82,7 @@
   font-weight: 400;
   font-size: 12px;
   text-align: justify;
-  color: var(--indiv-color);
+  color: $indiv-color;
   margin-top: 8px 
 }
 
@@ -88,9 +91,9 @@
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: var(--base-color);
+  color: $base-color;
   border-radius: 8px;
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   padding: 8px 24px; 
   text-align: justify;
   text-transform: uppercase;

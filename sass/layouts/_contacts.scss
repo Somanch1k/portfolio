@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 .contacts{
   padding-top: 50px;
   padding-bottom: 50px;
@@ -38,7 +40,7 @@
   font-weight: 700;
   font-size: 30px;
   text-align: center;
-  color: var(--base-color);
+  color: $base-color;
 
   @media screen and (min-width:480px) {
     font-size: 36px;
@@ -61,7 +63,7 @@
   font-weight: 400;
   font-size: 16px;
   text-align: center;
-  color: var(--base-color);
+  color: $base-color;
 
   @media screen and (min-width:480px) {
     font-size: 18px;
@@ -72,7 +74,7 @@
   font-family: "DM Sans", sans-serif;;
   font-weight: 700;
   font-size: 38px;
-  color: var(--base-color);
+  color: $base-color;
   text-align: center;
   text-transform: uppercase;
 
@@ -94,7 +96,7 @@
 }
 
 .black_icon{
-  filter: var(--icon-filter);
+  filter: $icon-filter;
 }
 
 .contact_link{
@@ -102,7 +104,7 @@
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
-  color: var(--base-color);
+  color: $base-color;
   align-items: center;
 
   @media screen and (min-width:480px) {
@@ -133,7 +135,7 @@
   border-bottom: 1px solid #4f4f4f;
   padding-bottom: 10px;
   width: 250px;
-  color: var(--base-color);
+  color: $base-color;
   transition: border-color 0.5s ease;
 }
 
@@ -147,7 +149,7 @@
   width: 100%;
   height: 109px;
   margin-top: 46px;
-  color: var(--base-color);
+  color: $base-color;
   resize: none;
   transition: border-color 0.5s ease;
 }
@@ -157,8 +159,8 @@
   border-radius: 8px;
   width: 143px;
   height: 42px; 
-  color: var(--base-color);
-  background-color: var(--primary-color);
+  color: $base-color;
+  background-color: $primary-color;
   font-weight: 500;
   font-size: 14px;
   font-family: "DM Sans", sans-serif;
@@ -169,7 +171,7 @@
 .input:focus{
   outline: none;
   border: none;
-  border-bottom: 1px solid var(--base-color);
+  border-bottom: 1px solid $base-color;
   transition: border-color 0.5s ease;
 }
 
@@ -181,12 +183,12 @@
 
 .input:valid{
   border: none;
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 1px solid $primary-color;
   transition: border-color 0.5s ease;
 }
 
 textarea:focus{
   outline: none;
-  border: 1px solid var(--base-color);
+  border: 1px solid $base-color;
   transition: border-color 0.5s ease;
 }

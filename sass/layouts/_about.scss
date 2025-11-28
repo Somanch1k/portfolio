@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 .about{
   padding-top: 50px;
   padding-bottom: 50px;
@@ -8,7 +10,7 @@
   font-weight: 700;
   font-size: 38px;
   text-align: center;
-  color: var(--base-color);
+  color: $base-color;
   text-transform: uppercase;
 
   @media screen and (min-width:480px) {
@@ -21,7 +23,7 @@
   font-weight: 400;
   font-size: 18px;
   text-align: center;
-  color: var(--base-color);
+  color: $base-color;
   margin: 16px auto 0;
   max-width: 576px;
 
@@ -43,7 +45,7 @@
   font-weight: 600;
   font-size: 14px;
   text-align: justify;
-  color: var(--base-color); 
+  color: $base-color; 
 
   @media screen and (min-width:480px) {
     font-size: 18px;
@@ -55,7 +57,7 @@
   font-weight: 400;
   font-size: 14px;
   text-align: justify;
-  color: var(--base-color);
+  color: $base-color;
   margin-top: 24px;
 
   @media screen and (min-width:480px) {
@@ -72,8 +74,8 @@
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
-  color: var(--base-color);
-  outline: 1px solid var(--base-color);
+  color: $base-color;
+  outline: 1px solid $base-color;
   padding: 12px 24px;
   border-radius: 8px;
   text-align: center;
@@ -129,7 +131,7 @@
 .list_title{
   font-weight: 700;
   font-size: 24px;
-  color: var(--base-color);
+  color: $base-color;
   text-transform: uppercase;
   font-family: "DM Sans", sans-serif;
 }
@@ -178,7 +180,7 @@
   font-weight: 700;
   font-size: 24px;
   text-align: center;
-  color: var(--base-color);
+  color: $base-color;
   text-transform: uppercase;
   font-family: "DM Sans", sans-serif;
   margin: 8px;
@@ -189,6 +191,6 @@
   font-weight: 400;
   font-size: 18px;
   text-align: center;
-  color: var(--base-color);
+  color: $base-color;
   width: 200px;
 }

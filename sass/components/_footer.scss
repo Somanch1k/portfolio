@@ -1,27 +1,4 @@
-@import url("./base.css");
-@import url(./variables.css);
-@import url(./container.css);
-@import url(./header.css);
-@import url(./hero_section.css);
-@import url(./about_section.css);
-@import url(./portfolio_section.css);
-@import url(./contacts_section.css);
-
-body {
-  background-color: var(--background-color);
-  transition: background-color 0.3s linear, color 0.3s linear;
-}
-
-body:has(#theme:checked){
-  background-color: rgb(255, 255, 255);
-  --base-color: rgb(17, 17, 17);
-  --secondary-color: rgb(33, 33, 33);
-  --titles-color: #e6e6e6;
-  --indiv-color: #dadada;
-  --black-color: rgb(255, 255, 255);
-  --icon-filter: invert(1);
-}
-
+@use "../utils/variables" as *;
 
 .social_list{
   display: flex;
@@ -45,7 +22,7 @@ body:has(#theme:checked){
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 10px;
-  color: var(--base-color);
+  color: $base-color;
 
   @media screen and (min-width:480px) {
     font-size: 14px;
@@ -53,7 +30,7 @@ body:has(#theme:checked){
 }
 
 .foot_link{
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   width: 28px;
   height: 28px;
   display: flex;
