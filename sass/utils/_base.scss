@@ -27,7 +27,92 @@ body:has(#theme:checked){
 }
 
 body:has(#theme:checked) .portfolio_list li{
-  background-color: black;
+  transition: background-color 0.5s ease;
+  background-color: rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .portfolio_list p{
+  color: white
+}
+
+body:has(#theme:checked) .portfolio h2{
+  color: rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .portfolio_description{
+  color: rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .hero__title{
+  color: rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .hero p{
+  color: rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .hero-action__link-secondary {
+  color: rgb(17, 17, 17);
+  border: 1px solid rgb(17, 17, 17);
+}
+
+
+body:has(#theme:checked) .hero_badge{
+  color: rgb(17, 17, 17);
+  border: 1px solid rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .about p{
+  color: rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .about h2{
+  color: rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .about h3{
+  color: rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .link{
+  color: rgb(17, 17, 17);
+  border: 1px solid rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .contacts h2{
+  color: rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .contacts h3{
+  color: rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .contacts p{
+  color: rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .contact_link{
+  color: rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .input:focus{
+  border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+body:has(#theme:checked) .input{
+  color: rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .text-area:focus{
+  border: 1px solid rgb(198, 198, 198);
+}
+
+body:has(#theme:checked) .text-area{
+  color: rgb(17, 17, 17);
+}
+
+body:has(#theme:checked) .footer p{
+  color: rgb(17, 17, 17);
 }
 
 body:has(#theme:checked) .black_icon{

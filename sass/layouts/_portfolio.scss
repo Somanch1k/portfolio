@@ -63,6 +63,7 @@
   background-color: $base-color;
   max-width: 330px;
   border-radius: 16px;
+  transition: background-color 0.5s ease;
 }
 
 .portfolio_list img{
